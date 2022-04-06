@@ -38,7 +38,13 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithBold}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
@@ -70,8 +76,8 @@
 %----------HEADING-----------------
 \centerline{\textbf{{\Large Justin Westley}}}
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \href{http://www.jwest.dev/}{jwest.dev} & {justinwestley11@gmail.com}\\
-  \href{http://www.linkedin.com/in/justinwestley/}{linkedin.com/in/justinwestley} & \href{http://www.github.com/jwestfromtheeast}{github.com/jwestfromtheeast}\\
+  \href{http://www.linkedin.com/in/justinwestley/}{linkedin.com/in/justinwestley} & {(908) 914-2613}
+  \cr {Seattle, WA} & {justinwestley11@gmail.com}
 \end{tabular*}
 
 
@@ -80,36 +86,67 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Stevens Institute of Technology}{Hoboken, NJ}
-      {Bachelor of Engineering in Computer Engineering;  GPA: 3.70}{Aug 2016 - May 2020}
-      \resumeItem{Awards}
-          {ACT Score 36/36, Stevens Pinnacle Scholar (Honors College), Dean's List all semesters, Presidential Scholarship}
-      \resumeItem{Relevant Coursework}
+      {Bachelor of Engineering in Computer Engineering, Minor in Computer Science;  GPA: 3.70}{Aug 2016 - May 2020}
+      \resumeItemWithBold{Awards}
+          {Stevens Pinnacle Scholar (Honors College), Dean's List all semesters, Presidential Scholarship}
+      \resumeItemWithBold{Relevant Coursework}
           {Data Structures, Algorithms, Web Programming, Compiler Design, Digital System Design}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Amazon Web Services (AWS)}{Seattle, WA}
+      {Software Development Engineer - Elastic Compute Cloud (EC2)}{Jul 2021 - Present}
+      \resumeItemListStart
+        \resumeItem
+          {Worked in Edge Compute to bring infrastructure and technology closer to end users and support ultra low-latency uses}
+        \resumeItem
+          {Launched support for multiple AWS technologies within edge computing locations}
+        \resumeItem
+          {Maintained and improved critical service to support over 60,000 transactions per second}
+        \resumeItem
+          {Implemented guardrails within accounts to protect customers from unintended billing costs or failures}
+        \resumeItem
+          {Designed service to audit live networking data from multiple sources and ensure alignment to prevent errors}
+        \resumeItem
+          {Migrated legacy service  and resources to modern architecture for performance, security, and quality of life benefits}
+      \resumeItemListEnd
   
     \resumeSubheading
       {Amazon}{Seattle, WA}
-      {Incoming Software Development Engineer}{Aug 2020 Onward}
+      {Software Development Engineer - Alexa Shopping}{Jul 2020 - Jul 2021}
+      \resumeItemListStart
+        \resumeItem
+          {Worked to manage the purchases and memberships of customers by presenting interactive conversations to the end users}
+        \resumeItem
+          {Launched Prime membership and free trial sign-ups internationally on Alexa to increase global engagement of customers}
+        \resumeItem
+          {Developed support for multi-factor authentication on voice purchases to comply with international regulations}
+        \resumeItem
+          {Designed limited-time promotion for new Prime customers during holiday events when signing up on Alexa}
+        \resumeItem
+          {Built service to audit customer data and delete when requested or upon account deletion}
+        \resumeItem
+          {Led security reviews of multiple services, which included architecture reviews, service diagrams, and leading meetings}
+        \resumeItem
+          {Prepared all team-owned services for peak events through traffic forecasting, TPS calculation, and scaling accordingly}
+      \resumeItemListEnd
 
     \resumeSubheading
       {JPMorgan Chase and Co.}{Brooklyn, NY}
       {Software Engineering Intern}{Jun 2019 - Aug 2019}
       \resumeItemListStart
-        \resumeItem{Problem}
-          {Create dashboard to monitor uptime and status of internal applications and dependencies.}
-        \resumeItem{Solution}
-          {Developed fullstack web app using React, Redux, and Node.js to significantly improve workflow of clients.}
-        \resumeItem{Database}
+        \resumeItem
+          {Created dashboard to monitor uptime and status of internal applications and dependencies.}
+        \resumeItem
+          {Developed fullstack web app using React, Redux, and NodeJS to significantly improve workflow of other employees.}
+        \resumeItem
           {Designed and implemented a scalable database with MariaDB to manage all persistent data.}
-        \resumeItem{Server}
+        \resumeItem
           {Built a REST API using Express to fetch and post data.}
-        \resumeItem{UI}
-          {Developed a responsive UI to display relevant information with optimal performance.}
-        \resumeItem{Outcome}
+        \resumeItem
           {Presented project directly to senior management; may be implemented company-wide in the future.}
       \resumeItemListEnd
 
@@ -117,53 +154,49 @@
       {Stevens Institute of Technology}{Hoboken, NJ}
       {Undergraduate Researcher}{May 2018 - Aug 2018}
       \resumeItemListStart
-        \resumeItem{Problem}
-          {Create an application to allow high-quality video conferencing with a large group of users.}
-        \resumeItem{Solution}
-          {Designed and developed fullstack video conferencing app using React, WebRTC, Socket.IO, Node.js. Created mobile companion app using React Native.}
-        \resumeItem{AI}
-          {Developed and trained an AI in Python using PyTorch to detect and address irregularities in calls.}
-        \resumeItem{Management}
+        \resumeItem
+          {Created an application to allow high-quality video conferencing with a large group of users.}
+        \resumeItem
+          {Designed and developed fullstack video conferencing app using React, WebRTC, Socket.IO, and NodeJS. Created mobile companion app using React Native.}
+        \resumeItem
           {Managed team of four, including a remote member, by establishing a Slack server, Trello board, and GitHub repository.}
-        \resumeItem{Outcome}
-          {Trialed service with 100 users and supported over 20 users in a call while maintaining quality. Partnered with local thrift store to host online auction. Presented to over 500 faculty and students at Innovation Expo.}
+        \resumeItem
+          {Trialed service with 100 users and supported over 20 users in a call while maintaining quality. Presented to over 500 faculty and students at Innovation Expo.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Stevens Institute of Technology}{Hoboken, NJ}
       {Undergraduate Research Assistant}{May 2017 - Aug 2017}
       \resumeItemListStart
-        \resumeItem{Problem}
-          {Interpret snapshots of radio waves to identify their characteristics and categorize accordingly.}
-        \resumeItem{Solution}
-          {Designed and developed AI in Python utilizing TensorFlow to interpret characteristics of radio waves to within 10 percent of actual values. Presented to over 500 faculty and students at Innovation Expo.}
+        \resumeItem
+          {Designed and developed AI in Python utilizing TensorFlow to interpret characteristics of radio waves obtained from snapshots to within 10 percent of actual values. Presented to over 500 faculty and students at Innovation Expo.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Email App}
-      {Web app to provide service to easily create and deploy a survey to a user`s clients via email. Collects and formats results. Uses Node, Express, React, Redux, MongoDB, OAuth.}
-    \resumeSubItem{Media Recommender}
-      {Fullstack web app using Node and MongoDB to provide a platform for users to share music and movies with others, as well as get new recommendations via a complex algorithm.}
-    \resumeSubItem{Weather Station}
-      {Unit programmed in LabView to monitor and record temperature,  wind speed and direction, toxicity levels of the air, excessive noise, and tampering. Succinctly displays all information in a dashboard.}
-    \resumeSubItem{Autonomous Car}
-      {Car utilizing Arduino to navigate a maze via bumpers, photoresistors, infrared sensor, and a camera. Finished 2nd in a time trial of over 40 cars.}
-  \resumeSubHeadingListEnd
+%\section{Projects}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{Email App}
+%      {Web app to provide service to easily create and deploy a survey to a user`s clients via email. Collects and formats results. Uses Node, Express, React, Redux, MongoDB, OAuth.}
+%    \resumeSubItem{Media Recommender}
+%      {Fullstack web app using Node and MongoDB to provide a platform for users to share music and movies with others, as well as get new recommendations via a complex algorithm.}
+%    \resumeSubItem{Weather Station}
+%      {Unit programmed in LabView to monitor and record temperature,  wind speed and direction, toxicity levels of the air, excessive noise, and tampering. Succinctly displays all information in a dashboard.}
+%    \resumeSubItem{Autonomous Car}
+%      {Car utilizing Arduino to navigate a maze via bumpers, photoresistors, infrared sensor, and a camera. Finished 2nd in a time trial of over 40 cars.}
+%  \resumeSubHeadingListEnd
 
 %
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: JavaScript, Java, Python, C++, OCaml, HTML, CSS, Assembly, LabView}
+     \textbf{Languages}{: Java, JavaScript, TypeScript, Python, C++, Ruby, HTML, CSS, Assembly}
    }
    \item{
-     \textbf{Technologies/Other}{: React, Redux, Git, MongoDB, MySQL, WebRTC, OAuth, Agile (Jira/Trello)}
+     \textbf{Technologies, Frameworks, Tools}{: NodeJS, React, Redux, Postman, Git, MySQL, AWS (EC2, DynamoDB, Lambda, S3, SQS, SNS, VPC), MongoDB, Scrum/Agile/Kanban}
    }
  \resumeSubHeadingListEnd
 
