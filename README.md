@@ -1,4 +1,25 @@
-# resume
+# Resume
 
-Personal resume created with LaTeX. Original template source: https://www.overleaf.com/latex/templates/cs-slash-it-slash-swe-resume-template/ncxgzcgknkmf
-I recommend Overleaf as an easy to use platform for editing and compiling LaTeX into a PDF. Simply create a project, add in my resume.tex file, and compile!
+Personal resume built with LaTeX using Helvetica (TeX Gyre Heros) font.
+
+## Prerequisites
+
+Install BasicTeX via Homebrew:
+
+```bash
+brew install --cask basictex
+```
+
+Restart your terminal (or run `eval "$(/usr/libexec/path_helper)"`), then install required packages:
+
+```bash
+sudo tlmgr install titlesec enumitem fancyhdr helvetic tex-gyre
+```
+
+## Compile
+
+```bash
+pdflatex resume.tex
+```
+
+Output: `resume.pdf`
